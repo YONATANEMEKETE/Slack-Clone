@@ -37,13 +37,13 @@
     --radius: 0.5rem;
 
     /* my styles */
-    --myprimary: hsl(41, 100, 38);
-    --myaccent: hsl(298, 76, 15);
-    --mysecondary: hsl(0, 0, 100);
-    --mycard1: hsl(189, 100, 44);
-    --mycard2: hsl(46, 96, 44);
-    --mycard3: hsl(161, 92, 33);
-    --mylogo: hsl(0, 100, 75);
+    --myprimary: 41 100% 38%;
+    --myaccent: 298 76% 15%;
+    --mysecondary: 0 0% 100%;
+    --mycard1: 189 100% 44%;
+    --mycard2: 46 96% 44%;
+    --mycard3: 161 92% 33%;
+    --mylogo: 0 100% 75%;
 
     --logo: 'Mulish', sans-serif;
     --newyork: 'Old Standard TT', serif;

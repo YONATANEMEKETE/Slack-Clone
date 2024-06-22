@@ -25,13 +25,13 @@ export default {
 
       // my variables
       colors: {
-        myprimary: 'var(--myprimary)',
-        myaccent: 'var(--myaccent)',
-        mysecondary: 'var(--mysecondary)',
-        mycard1: 'var(--mycard1)',
-        mycard2: 'var(--mycard2)',
-        mycard3: 'var(--mycard3)',
-        mylogo: 'var(--mylogo)',
+        myprimary: 'hsl(var(--myprimary))',
+        myaccent: 'hsl(var(--myaccent))',
+        mysecondary: 'hsl(var(--mysecondary))',
+        mycard1: 'hsl(var(--mycard1))',
+        mycard2: 'hsl(var(--mycard2))',
+        mycard3: 'hsl(var(--mycard3))',
+        mylogo: 'hsl(var(--mylogo))',
 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
