@@ -9,7 +9,7 @@ const button = ({ variant, className, text }: ButtonProp = {}) => {
     return (
       <div
         className={`${className} w-max py-2 text-white text-lg font-logo font-semibold 
-      bg-myaccent rounded-lg cursor-pointer text-center`}
+      bg-myaccent rounded-sm cursor-pointer text-center`}
       >
         {text}
       </div>
@@ -20,7 +20,7 @@ const button = ({ variant, className, text }: ButtonProp = {}) => {
     return (
       <div
         className={`${className} w-max py-2 text-myaccent text-lg font-logo font-semibold 
-      bg-secondary border-2 border-myaccent rounded-lg cursor-pointer text-center`}
+      bg-secondary border  hover:ring-myaccent  border-myaccent rounded-sm cursor-pointer text-center`}
       >
         {text}
       </div>

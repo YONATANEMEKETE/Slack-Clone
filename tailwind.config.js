@@ -33,6 +33,7 @@ export default {
         mycard3: 'hsl(var(--mycard3))',
         mylogo: 'hsl(var(--mylogo))',
         mylink: 'hsl(var(--mylink))',
+        mydropdown: 'hsl(var(--mydropdown))',
 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

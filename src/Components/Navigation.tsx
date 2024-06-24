@@ -1,6 +1,6 @@
 import Container from './Container';
 import Slack from '../assets/Slack.png';
-import { AlignJustify, Search } from 'lucide-react';
+import { AlignJustify, ChevronDown, Search } from 'lucide-react';
 import UseSidebar from '@/Services/SidebarStore';
 import Button from './ui/Button';
 
@@ -9,18 +9,41 @@ const Navigation = () => {
 
   return (
     <div>
-      <Container className="h-[4rem] px-6 pt-4 md:pt-8">
+      <Container className="h-[4rem] px-6 pt-4 md:pt-8 lg:pt-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-x-2">
-            <div className="logo size-8">
-              <img src={Slack} className="" />
+          <div className="flex items-center gap-x-6">
+            <div className="flex items-center gap-x-2">
+              <div className="logo size-8">
+                <img src={Slack} className="" />
+              </div>
+              <div>
+                <p className="text-2xl font-logo font-extrabold leading-[1.25rem]">
+                  Slack
+                </p>
+                <p className="text-xs font-normal font-semibold">
+                  from salesforce
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="text-2xl font-logo font-extrabold leading-[1.25rem]">
-                Slack
+
+            <div className="hidden lg:flex gap-x-6">
+              <div className="font-logo font-bold flex items-end gap-x-2 cursor-pointer">
+                <p>Features</p>
+                <ChevronDown />
+              </div>
+              <div className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer">
+                <div>Solutions</div>
+                <ChevronDown />
+              </div>
+              <p className="font-logo font-bold hover:underline cursor-pointer">
+                Enterprise
               </p>
-              <p className="text-xs font-normal font-semibold">
-                from salesforce
+              <div className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer">
+                <p>Pricing</p>
+                <ChevronDown />
+              </div>
+              <p className=" font-logo font-bold hover:underline cursor-pointer">
+                Prices
               </p>
             </div>
           </div>

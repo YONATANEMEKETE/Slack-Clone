@@ -6,7 +6,7 @@ type SideStore = {
 };
 
 const UseSidebar = create<SideStore>((set) => ({
-  sidebar: true,
+  sidebar: false,
   setSidebar: () => set((state) => ({ sidebar: !state.sidebar })),
 }));
 
