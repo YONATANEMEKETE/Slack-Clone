@@ -1,8 +1,12 @@
+import Navigation from './Components/Navigation';
+import SideBar from './Components/SideBar';
+
 function App() {
   return (
     <>
-      <div className="text-3xl font-logo font-bold italic text-mylogo">
-        Slack
+      <div className="">
+        <Navigation />
+        <SideBar />
       </div>
     </>
   );
