@@ -1,8 +1,17 @@
+import UseDropDown from '@/Services/FeatureDropdownStore';
 import { ArrowRight, CloudDownload, Sparkle } from 'lucide-react';
+import slackpic from '../../assets/slackpic.jpg';
 
 const FeatureDropDown = () => {
+  const { dropdown } = UseDropDown();
+
   return (
-    <div className="absolute z-40 top-[4.5rem] left-[10rem] rounded-md shadow-2xl drop-shadow-2xl flex items-start w-max pb-4">
+    <div
+      className={`${
+        dropdown && 'opacity-0 -translate-y-12'
+      } absolute -z-10 top-[4.5rem] left-[10rem] rounded-md shadow-2xl drop-shadow-2xl hidden
+      lg:flex items-start w-max  pb-4 transition-all duration-500`}
+    >
       <div className="flex flex-col gap-y-12 px-4 pt-4">
         <div className="flex items-start">
           <div className="space-y-4 w-[15rem]">
@@ -186,12 +195,12 @@ const FeatureDropDown = () => {
         </div>
       </div>
 
-      <div className="w-[12rem] h-full hello bg-mydropdown rounded-tr-md pt-4 px-4">
-        <div>
+      <div className="w-[14rem] h-full hello bg-mydropdown rounded-tr-md pt-4 px-4">
+        <div className="pb-8 border-b border-slate-500">
           <p className="text-lg font-logo font-bold text-black mb-4">
             Featured
           </p>
-          <img src="" className="" />
+          <img src={slackpic} className="mb-4" />
           <p className="text-sm font-logo  text-black mb-6">
             Bussinesses of All sizes are Working Faster with Slack
           </p>
@@ -200,7 +209,18 @@ const FeatureDropDown = () => {
             <ArrowRight />
           </div>
         </div>
-        <div></div>
+
+        <div className="pt-8 px-2 space-y-4">
+          <p className="text-black font-logo font-semibold text-sm hover:underline hover:text-mycard1 cursor-pointer">
+            What is Slack?
+          </p>
+          <p className="text-black font-logo font-semibold text-sm hover:underline hover:text-mycard1 cursor-pointer">
+            Slack Vs Email
+          </p>
+          <p className="text-black font-logo font-semibold text-sm hover:underline hover:text-mycard1 cursor-pointer">
+            Accessebility
+          </p>
+        </div>
       </div>
     </div>
   );

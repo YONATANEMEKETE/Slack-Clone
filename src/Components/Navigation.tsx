@@ -3,9 +3,15 @@ import Slack from '../assets/Slack.png';
 import { AlignJustify, ChevronDown, Search } from 'lucide-react';
 import UseSidebar from '@/Services/SidebarStore';
 import Button from './ui/Button';
+import UseDropDown from '@/Services/FeatureDropdownStore';
+import UseDropSolution from '@/Services/SolutionDropStore';
+import UseDropPrice from '@/Services/PricingDrop';
 
 const Navigation = () => {
   const { setSidebar } = UseSidebar();
+  const { setDropdown, dropdown } = UseDropDown();
+  const { dropdownSol, setDropSol } = UseDropSolution();
+  const { dropdownPri, setDropPrice } = UseDropPrice();
 
   return (
     <div>
@@ -27,20 +33,41 @@ const Navigation = () => {
             </div>
 
             <div className="hidden lg:flex gap-x-6">
-              <div className="font-logo font-bold flex items-end gap-x-2 cursor-pointer">
+              <div
+                onClick={setDropdown}
+                className="font-logo font-bold flex items-end gap-x-2 cursor-pointer"
+              >
                 <p>Features</p>
-                <ChevronDown />
+                <ChevronDown
+                  className={`${
+                    !dropdown && '-rotate-180'
+                  } transition-all duration-500`}
+                />
               </div>
-              <div className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer">
+              <div
+                onClick={setDropSol}
+                className="font-logo font-bold flex items-end gap-x-2 cursor-pointer"
+              >
                 <div>Solutions</div>
-                <ChevronDown />
+                <ChevronDown
+                  className={`${
+                    !dropdownSol && '-rotate-180'
+                  } transition-all duration-500`}
+                />
               </div>
               <p className="font-logo font-bold hover:underline cursor-pointer">
                 Enterprise
               </p>
-              <div className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer">
-                <p>Pricing</p>
-                <ChevronDown />
+              <div
+                onClick={setDropPrice}
+                className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer"
+              >
+                <p>Resources</p>
+                <ChevronDown
+                  className={`${
+                    !dropdownPri && '-rotate-180'
+                  } transition-all duration-500`}
+                />
               </div>
               <p className=" font-logo font-bold hover:underline cursor-pointer">
                 Prices
