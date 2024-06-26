@@ -8,11 +8,11 @@ const SolutionDropMenu = () => {
   return (
     <div
       className={`${
-        dropdownSol && 'opacity-0 -translate-y-12'
+        dropdownSol && 'opacity-0 -translate-y-80'
       } absolute -z-10 top-[4.5rem] left-[18rem] rounded-md shadow-2xl drop-shadow-2xl hidden
   lg:flex items-start w-max transition-all duration-500`}
     >
-      <div className="flex flex-col gap-y-24 px-4 pr-16 pt-4">
+      <div className="flex flex-col gap-y-44 px-4 pr-16 pt-4">
         <div className="flex items-start">
           <div className="space-y-4 w-[15rem]">
             <p className="text-lg font-logo font-bold text-black">
@@ -87,7 +87,7 @@ const SolutionDropMenu = () => {
         </div>
       </div>
 
-      <div className="w-[14rem] h-full hello bg-mydropdown rounded-tr-md pt-4 px-4">
+      <div className="w-[14rem] h-full hello bg-mydropdown rounded-e-md pt-4 px-4">
         <div className="pb-8 border-b border-slate-500">
           <p className="text-lg font-logo font-bold text-black mb-4">
             Featured

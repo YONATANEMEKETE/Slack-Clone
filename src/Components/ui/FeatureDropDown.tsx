@@ -8,11 +8,11 @@ const FeatureDropDown = () => {
   return (
     <div
       className={`${
-        dropdown && 'opacity-0 -translate-y-12'
+        dropdown && 'opacity-0 -translate-y-80'
       } absolute -z-10 top-[4.5rem] left-[10rem] rounded-md shadow-2xl drop-shadow-2xl hidden
-      lg:flex items-start w-max  pb-4 transition-all duration-500`}
+      lg:flex items-start w-max transition-all duration-500`}
     >
-      <div className="flex flex-col gap-y-12 px-4 pt-4">
+      <div className="flex flex-col gap-y-10 px-4 pt-4">
         <div className="flex items-start">
           <div className="space-y-4 w-[15rem]">
             <p className="text-lg font-logo font-bold text-black">
@@ -195,7 +195,7 @@ const FeatureDropDown = () => {
         </div>
       </div>
 
-      <div className="w-[14rem] h-full hello bg-mydropdown rounded-tr-md pt-4 px-4">
+      <div className="w-[14rem] h-full bg-mydropdown rounded-e-md pt-4 pb-[3.75rem] px-4">
         <div className="pb-8 border-b border-slate-500">
           <p className="text-lg font-logo font-bold text-black mb-4">
             Featured

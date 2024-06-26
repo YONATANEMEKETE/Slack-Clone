@@ -6,12 +6,46 @@ import Button from './ui/Button';
 import UseDropDown from '@/Services/FeatureDropdownStore';
 import UseDropSolution from '@/Services/SolutionDropStore';
 import UseDropPrice from '@/Services/PricingDrop';
+import useSearchDrop from '@/Services/SearchDrop';
 
 const Navigation = () => {
   const { setSidebar } = UseSidebar();
   const { setDropdown, dropdown } = UseDropDown();
   const { dropdownSol, setDropSol } = UseDropSolution();
   const { dropdownPri, setDropPrice } = UseDropPrice();
+  const { setSearchDrop } = useSearchDrop();
+
+  const toggleFeatures = () => {
+    if (!dropdownSol) {
+      setDropSol();
+    }
+
+    if (!dropdownPri) {
+      setDropPrice();
+    }
+
+    setDropdown();
+  };
+
+  const toggleSolutions = () => {
+    if (!dropdown) {
+      setDropdown();
+    }
+    if (!dropdownPri) {
+      setDropPrice();
+    }
+    setDropSol();
+  };
+
+  const toggleResources = () => {
+    if (!dropdownSol) {
+      setDropSol();
+    }
+    if (!dropdown) {
+      setDropdown();
+    }
+    setDropPrice();
+  };
 
   return (
     <div>
@@ -34,7 +68,7 @@ const Navigation = () => {
 
             <div className="hidden lg:flex gap-x-6">
               <div
-                onClick={setDropdown}
+                onClick={toggleFeatures}
                 className="font-logo font-bold flex items-end gap-x-2 cursor-pointer"
               >
                 <p>Features</p>
@@ -45,7 +79,7 @@ const Navigation = () => {
                 />
               </div>
               <div
-                onClick={setDropSol}
+                onClick={toggleSolutions}
                 className="font-logo font-bold flex items-end gap-x-2 cursor-pointer"
               >
                 <div>Solutions</div>
@@ -59,7 +93,7 @@ const Navigation = () => {
                 Enterprise
               </p>
               <div
-                onClick={setDropPrice}
+                onClick={toggleResources}
                 className=" font-logo font-bold flex items-end gap-x-2 cursor-pointer"
               >
                 <p>Resources</p>
@@ -76,7 +110,7 @@ const Navigation = () => {
           </div>
 
           <div className="flex items-center lg:gap-x-4 gap-x-6 lg:basis-1/3 justify-end">
-            <div className="cursor-pointer">
+            <div onClick={setSearchDrop} className="cursor-pointer">
               <Search />
             </div>
 

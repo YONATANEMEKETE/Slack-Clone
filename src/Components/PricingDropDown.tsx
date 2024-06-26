@@ -8,7 +8,7 @@ const PricingDropDown = () => {
   return (
     <div
       className={`${
-        dropdownPri && 'opacity-0 -translate-y-12'
+        dropdownPri && 'opacity-0 -translate-y-80'
       } absolute -z-10 top-[4.5rem] left-[18rem] rounded-md shadow-2xl drop-shadow-2xl hidden
 lg:flex items-start w-max transition-all duration-500`}
     >
@@ -44,7 +44,7 @@ lg:flex items-start w-max transition-all duration-500`}
         </div>
       </div>
 
-      <div className="w-[14rem] h-full hello bg-mydropdown rounded-tr-md pt-2 px-4">
+      <div className="w-[14rem] h-full hello bg-mydropdown rounded-e-md pt-2 px-4">
         <div className="pb-4 border-b border-slate-500">
           <p className="text-lg font-logo font-bold text-black mb-4">
             Featured
