@@ -5,8 +5,8 @@ import Etsy from '../assets/Etsy.png';
 
 const Hero = () => {
   return (
-    <div className="bg-transparent w-full h-screen pt-6 md:pt-12 px-4 text-center border-b-2">
-      <div className="text-[2rem] md:text-[3rem] font-logo font-extrabold leading-snug mb-4 px-6">
+    <div className="bg-transparent w-full h-screen pt-6 md:pt-12 px-4 text-center">
+      <div className="text-[2rem] md:text-[3rem] font-logo font-extrabold leading-snug mb-4 px-6 w-2/3 md:w-full mx-auto">
         Made for people.{' '}
         <span className="text-myaccent">Built for productivity.</span>
       </div>
@@ -46,7 +46,7 @@ const Hero = () => {
         <img src={Etsy} className="size-10 inline-block" />
       </div>
 
-      <div className="relative z-0 w-[70vw] h-[80vh] bg-myaccent mx-auto text-white text-xl font-bold rounded-lg pt-8">
+      <div className="relative z-0 w-[85vw] lg:w-[70vw] aspect-video bg-myaccent mx-auto text-white text-xl font-bold rounded-lg pt-8">
         Video Mock Up
       </div>
     </div>
