@@ -48,7 +48,7 @@ const Navigation = () => {
   };
 
   return (
-    <div>
+    <div className="relative z-20">
       <Container className="h-[4rem] px-6 pt-4 md:pt-8 lg:pt-4 ">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-6">

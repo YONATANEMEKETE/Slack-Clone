@@ -9,8 +9,8 @@ const FeatureDropDown = () => {
     <div
       className={`${
         dropdown && 'opacity-0 -translate-y-80'
-      } absolute -z-10 top-[4.5rem] left-[10rem] rounded-md shadow-2xl drop-shadow-2xl hidden
-      lg:flex items-start w-max transition-all duration-500`}
+      } fixed z-10 top-[4.5rem] left-[10rem] rounded-md shadow-2xl drop-shadow-2xl hidden
+      lg:flex items-start w-max transition-all duration-500 bg-white`}
     >
       <div className="flex flex-col gap-y-10 px-4 pt-4">
         <div className="flex items-start">

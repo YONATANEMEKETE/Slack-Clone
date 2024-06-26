@@ -5,12 +5,12 @@ import FeatureDropDown from './ui/FeatureDropDown';
 
 const DropdownMenus = () => {
   return (
-    <>
+    <div className="">
       <FeatureDropDown />
       <SolutionDropMenu />
       <PricingDropDown />
       <SearchDropDown />
-    </>
+    </div>
   );
 };
 

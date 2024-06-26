@@ -34,6 +34,7 @@ export default {
         mylogo: 'hsl(var(--mylogo))',
         mylink: 'hsl(var(--mylink))',
         mydropdown: 'hsl(var(--mydropdown))',
+        mysection: 'hsl(var(--mysection))',
 
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
