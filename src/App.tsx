@@ -1,5 +1,5 @@
 import DropdownMenus from './Components/DropdownMenus';
-// import Hero from './Components/Hero';
+import Hero from './Components/Hero';
 import Navigation from './Components/Navigation';
 import SideBar from './Components/SideBar';
 
@@ -10,7 +10,7 @@ function App() {
         <Navigation />
         <DropdownMenus />
         <SideBar />
-        {/* <Hero /> */}
+        <Hero />
       </div>
     </>
   );

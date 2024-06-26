@@ -49,7 +49,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <Container className="h-[4rem] px-6 pt-4 md:pt-8 lg:pt-4">
+      <Container className="h-[4rem] px-6 pt-4 md:pt-8 lg:pt-4 ">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-6">
             <div className="flex items-center gap-x-2">
@@ -121,7 +121,7 @@ const Navigation = () => {
             <div className="hidden lg:flex items-center gap-x-4 w-2/3">
               <Button
                 variant="secondary"
-                className="basis-1/2"
+                className="basis-1/2 "
                 text="Talk to Slack"
               />
               <Button
