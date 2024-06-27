@@ -2,9 +2,9 @@ import { ArrowRight } from 'lucide-react';
 
 const Features = () => {
   return (
-    <div className="w-screen pb-16 bg-mysection pt-[2rem] md:pt-[25rem] space-y-24">
+    <div className="w-screen pb-16 bg-mysection pt-[25rem] space-y-24">
       <div className=" w-screen flex flex-col min-[820px]:flex-row items-start min-[820px]:items-center gap-y-4 justify-between">
-        <div className="w-[45%] h-[60vh] bg-mycard2 rounded-e-full"></div>
+        <div className="w-[70%] md:w-[45%] h-[60vh] bg-mycard2 rounded-e-full"></div>
         <div className="space-y-4 basis-[45%] mr-10 pl-8 min-[820px]:pl-0">
           <div className="text-[3rem] font-logo font-extrabold text-black leading-tight w-[90%]">
             Move faster with your tools in one place
@@ -36,11 +36,11 @@ const Features = () => {
             <ArrowRight />
           </div>
         </div>
-        <div className="w-[45%] h-[60vh] bg-mycard3 rounded-s-full"></div>
+        <div className="w-[70%] md:w-[45%] h-[60vh] bg-mycard3 rounded-s-full"></div>
       </div>
 
       <div className=" w-screen flex flex-col min-[820px]:flex-row items-start min-[820px]:items-center  gap-y-4 justify-between">
-        <div className="w-[45%] h-[60vh] bg-mycard1 rounded-e-full"></div>
+        <div className="w-[70%] md:w-[45%] h-[60vh] bg-mycard1 rounded-e-full"></div>
         <div className="space-y-4 basis-[45%] mr-10 pl-8 min-[820px]:pl-0">
           <div className="text-[3rem] font-logo font-extrabold text-black leading-tight w-[90%]">
             Bring your team together

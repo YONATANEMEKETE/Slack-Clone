@@ -5,7 +5,7 @@ import Etsy from '../assets/Etsy.png';
 
 const Hero = () => {
   return (
-    <div className="bg-transparent w-full h-screen pt-6 md:pt-12 px-4 text-center">
+    <div className="bg-transparent w-full h-[80vh] md:h-screen pt-6 md:pt-12 px-4 text-center">
       <div className="text-[2rem] md:text-[3rem] font-logo font-extrabold leading-snug mb-4 px-6 w-2/3 md:w-full mx-auto">
         Made for people.{' '}
         <span className="text-myaccent">Built for productivity.</span>
