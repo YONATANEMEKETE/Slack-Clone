@@ -8,7 +8,7 @@ const button = ({ variant, className, text }: ButtonProp = {}) => {
   if (variant === 'primary') {
     return (
       <div
-        className={`${className} w-max py-2 text-white text-lg font-logo font-semibold 
+        className={`${className} w-max py-2 px-2 text-white text-lg font-logo font-semibold 
       bg-myaccent rounded-sm cursor-pointer text-center`}
       >
         {text}
@@ -19,7 +19,7 @@ const button = ({ variant, className, text }: ButtonProp = {}) => {
   if (variant == 'secondary') {
     return (
       <div
-        className={`${className} w-max py-2 text-myaccent text-lg font-logo font-semibold 
+        className={`${className} w-max py-2 px-2 text-myaccent text-lg font-logo font-semibold 
       bg-secondary border  hover:ring-myaccent  border-myaccent rounded-sm cursor-pointer text-center`}
       >
         {text}

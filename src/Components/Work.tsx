@@ -1,0 +1,59 @@
+import { ArrowRight } from 'lucide-react';
+
+const Work = () => {
+  return (
+    <div className="w-screen  bg-mysection pt-12 pb-12">
+      <div className="text-xl md:text-3xl text-black font-logo font-extrabold w-max mx-auto mb-8">
+        Take A deeper Dive into A new way to Work
+      </div>
+      <div className="grid items-center justify-center grid-cols-1 md:grid-cols-2 min-[1230px]:grid-cols-4 gap-4 w-max mx-auto">
+        <div className=" p-4 bg-mysecondary w-[18rem] shadow-xl hover:scale-110 transition-all duration-500">
+          <div className="bg-mysection w-full  h-[25vh] mb-2"></div>
+          <p className="font-normal font-semibold text-gray-600">Event</p>
+          <div className="text-2xl font-logo font-extrabold text-black mb-20">
+            Ready for the future of AI in Slack?
+          </div>
+          <div className="flex items-center justify-between text-mycard1 font-logo font-bold cursor-pointer">
+            <p>Watch on Demand</p>
+            <ArrowRight />
+          </div>
+        </div>
+        <div className=" p-4 bg-mysecondary w-[18rem] shadow-xl hover:scale-110 transition-all duration-500">
+          <div className="bg-mysection w-full  h-[25vh] mb-2"></div>
+          <p className="font-normal font-semibold text-gray-600">Event</p>
+          <div className="text-2xl font-logo font-extrabold text-black mb-20">
+            Ready for the future of AI in Slack?
+          </div>
+          <div className="flex items-center justify-between text-mycard1 font-logo font-bold cursor-pointer">
+            <p>Watch on Demand</p>
+            <ArrowRight />
+          </div>
+        </div>
+        <div className=" p-4 bg-mysecondary w-[18rem] shadow-xl hover:scale-110 transition-all duration-500">
+          <div className="bg-mysection w-full  h-[25vh] mb-2"></div>
+          <p className="font-normal font-semibold text-gray-600">Event</p>
+          <div className="text-2xl font-logo font-extrabold text-black mb-20">
+            Ready for the future of AI in Slack?
+          </div>
+          <div className="flex items-center justify-between text-mycard1 font-logo font-bold cursor-pointer">
+            <p>Watch on Demand</p>
+            <ArrowRight />
+          </div>
+        </div>
+        <div className=" p-4 bg-mysecondary w-[18rem] shadow-xl hover:scale-110 transition-all duration-500">
+          <div className="bg-mysection w-full  h-[25vh] mb-2"></div>
+          <p className="font-normal font-semibold text-gray-600">Event</p>
+          <div className="text-2xl font-logo font-extrabold text-black mb-20">
+            Ready for the future of AI in Slack?
+          </div>
+          <div className="flex items-center justify-between text-mycard1 font-logo font-bold cursor-pointer">
+            <p>Watch on Demand</p>
+            <ArrowRight />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Work;
