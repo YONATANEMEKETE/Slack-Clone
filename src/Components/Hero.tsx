@@ -11,11 +11,11 @@ const Hero = () => {
         <span className="text-myaccent">Built for productivity.</span>
       </div>
 
-      <div className="w-full  flex lg:block mb-6">
+      <div className="w-full px-12  flex lg:block mb-6">
         <Button
           variant="primary"
           text="Get Started"
-          className="w-full basis-full lg:px-10 py-4 mx-auto"
+          className="w-full min-[970px]:w-[15rem]  basis-full lg:px-10 py-4 mx-auto"
         />
       </div>
 
