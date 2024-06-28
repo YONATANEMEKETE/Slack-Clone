@@ -1,5 +1,6 @@
 import DropdownMenus from './Components/DropdownMenus';
 import Features from './Components/Features';
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import Navigation from './Components/Navigation';
 import SideBar from './Components/SideBar';
@@ -17,6 +18,7 @@ function App() {
         <Features />
         <Status />
         <Work />
+        <Footer />
       </div>
     </>
   );
