@@ -9,7 +9,7 @@ const SolutionDropMenu = () => {
     <div
       className={`${
         dropdownSol && 'opacity-0 -translate-y-80'
-      } fixed z-10 top-[4.5rem] left-[18rem] rounded-md shadow-2xl drop-shadow-2xl hidden
+      } fixed z-10 top-[5rem] left-[18rem] rounded-md shadow-2xl drop-shadow-2xl hidden
   lg:flex items-start w-max transition-all duration-500 bg-white`}
     >
       <div className="flex flex-col gap-y-44 px-4 pr-16 pt-4">

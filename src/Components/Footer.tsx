@@ -17,12 +17,12 @@ const Footer = () => {
       </div>
       <div className="mb-36 min-[920px]:mb-40 min-[1300px]:mb-48">
         <div
-          className="relative z-20 w-[80vw] text-center mx-auto text-[2rem] min-[600px]:text-[2.5rem] min-[1100px]:text-[3rem]
+          className="relative z-10 w-[80vw] text-center mx-auto text-[2rem] min-[600px]:text-[2.5rem] min-[1100px]:text-[3rem]
        text-white font-logo font-extrabold min-[600px]:mb-4 min-[800px]:mb-12"
         >
           See All you can Accomplish with Slack
         </div>
-        <div className="relative z-20 w-full min-[1020px]:w-[40vw]  mx-auto  px-8 min-[1020px]:px-0 flex flex-col min-[1020px]:flex-row items-stretch gap-4">
+        <div className="relative z-10 w-full min-[1020px]:w-[40vw]  mx-auto  px-8 min-[1020px]:px-0 flex flex-col min-[1020px]:flex-row items-stretch gap-4">
           <Button
             text="Get started"
             variant="secondary"
