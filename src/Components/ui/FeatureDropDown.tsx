@@ -1,4 +1,4 @@
-import UseDropDown from '@/Services/FeatureDropdownStore';
+import UseDropDown from '../../Services/FeatureDropdownStore';
 import { ArrowRight, CloudDownload, Sparkle } from 'lucide-react';
 import slackpic from '../../assets/slackpic.jpg';
 

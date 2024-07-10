@@ -1,6 +1,6 @@
 import slackpic from '../assets/slackpic.jpg';
 import { CloudDownload, ArrowRight } from 'lucide-react';
-import UseDropPrice from '@/Services/PricingDrop';
+import UseDropPrice from '../Services/PricingDrop';
 
 const PricingDropDown = () => {
   const { dropdownPri } = UseDropPrice();

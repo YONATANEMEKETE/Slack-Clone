@@ -2,7 +2,7 @@ import Container from './Container';
 import Slack from '../assets/Slack.png';
 import { Search, X } from 'lucide-react';
 import Button from './ui/Button';
-import useSearchDrop from '@/Services/SearchDrop';
+import useSearchDrop from '../Services/SearchDrop';
 
 const SearchDropDown = () => {
   const { searchDrop, setSearchDrop } = useSearchDrop();

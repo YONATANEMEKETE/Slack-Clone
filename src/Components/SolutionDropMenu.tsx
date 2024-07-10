@@ -1,6 +1,6 @@
 import { CloudDownload, ArrowRight } from 'lucide-react';
 import slackpic from '../assets/slackpic.jpg';
-import UseDropSolution from '@/Services/SolutionDropStore';
+import UseDropSolution from '../Services/SolutionDropStore';
 
 const SolutionDropMenu = () => {
   const { dropdownSol } = UseDropSolution();
