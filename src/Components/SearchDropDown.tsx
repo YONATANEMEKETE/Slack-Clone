@@ -9,7 +9,7 @@ const SearchDropDown = () => {
   return (
     <Container
       className={`${
-        searchDrop ? '-top-full' : 'top-2'
+        searchDrop ? '-top-full' : 'top-4'
       } fixed z-40  inset-x-0 lg:inset-x-4 w-full h-[5rem] bg-mysecondary rounded-none lg:rounded-full shadow-2xl px-8 flex items-center 
       transition-all duration-500 ease-in-out`}
     >
