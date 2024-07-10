@@ -1,12 +1,12 @@
 import Container from './Container';
 import Slack from '../assets/Slack.png';
 import { AlignJustify, ChevronDown, Search } from 'lucide-react';
-import UseSidebar from '@/Services/SidebarStore';
+import UseSidebar from '../Services/SidebarStore';
 import Button from './ui/Button';
-import UseDropDown from '@/Services/FeatureDropdownStore';
-import UseDropSolution from '@/Services/SolutionDropStore';
-import UseDropPrice from '@/Services/PricingDrop';
-import useSearchDrop from '@/Services/SearchDrop';
+import UseDropDown from '../Services/FeatureDropdownStore';
+import UseDropSolution from '../Services/SolutionDropStore';
+import UseDropPrice from '../Services/PricingDrop';
+import useSearchDrop from '../Services/SearchDrop';
 import { useEffect, useState } from 'react';
 
 const Navigation = () => {

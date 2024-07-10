@@ -1,7 +1,7 @@
 import Slack from '../assets/Slack.png';
 import { ChevronRight, X } from 'lucide-react';
 import Button from './ui/Button';
-import UseSidebar from '@/Services/SidebarStore';
+import UseSidebar from '../Services/SidebarStore';
 
 type LinkProp = {
   text: string;
